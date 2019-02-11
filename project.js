@@ -39,7 +39,7 @@ $(".p2Btn").on("click",function () {
 
 // function used to keep up with winner
 
-}
+
 function outcome() {
     if (p1 === 15)
     {
@@ -74,16 +74,16 @@ $("#mouse").on("click", function () {
 $("#keyboard").on("click", function () {
     $("#mouse").removeAttr("disabled","");
     $("#keyboard").attr("disabled","");
-    //adds the ability to use keys P & W to play
+    //adds the ability to use keys P 7 W
     document.addEventListener("keydown", function (e) {
-        if(e.code === "KeyP")
+        if(e.code === "KeyW")
         {
             p1++;
             $(".display").text(p1);
             outcome();
             score();
         }
-        else if(e.code === "KeyW")
+        else if(e.code === "KeyP")
         {
             p2++;
             $(".display2").text(p2);
